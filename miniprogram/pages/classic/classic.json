@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "mm-like": "/components/like/index",
+    "mm-img-btn": "/components/image-button/index",
+    "mm-movie": "/components/classic/movie/index",
+    "mm-music": "/components/classic/music/index",
+    "mm-essay": "/components/classic/essay/index",
+    "mm-episode": "/components/episode/index",
+    "mm-nav": "/components/nav/index"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mm-tag": "/components/tag/index",
+    "mm-img-btn": "/components/image-button/index"
+  },
+  "backgroundColor": "#f00"
+}

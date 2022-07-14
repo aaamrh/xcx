@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/classic/classic",
+    "pages/book/book",
+    "pages/my/my",
+    "pages/book-detail/book-detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "铁头马",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "backgroundColor": "#f0f0f0",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#ff0000",
+    "backgroundColor": "#eee",
+    "color": "#0000ff",
+    "list": [
+      {
+        "pagePath": "pages/classic/classic",
+        "text": "流行"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "书籍"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

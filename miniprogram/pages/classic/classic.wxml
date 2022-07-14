@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="header">
+    <mm-episode class="episode" index="{{classic.index}}" />
+    <view class="like-container">
+      <mm-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />  
+      <mm-img-btn class="share-btn" open-type="share">
+        <image class='share' slot='img' src="/images/my/about.png"></image>
+      </mm-img-btn>
+    </view>
+  </view>
+
+
+  <mm-movie hidden="{{classic.type != 100}}" img="{{classic.image}}" content="{{classic.content}}" />
+  
+  <!-- <mm-music wx:if="{{classic.type == 200}}" img="{{classic.image}}" content="{{classic.content}}" src="{{classic.url}}"/> -->
+  <!-- <mm-music hidden="{{classic.type != 200}}" img="{{classic.image}}" content="{{classic.content}}" src="{{classic.url}}"/> -->
+  <mm-essay hidden="{{classic.type != 300}}" img="{{classic.image}}" content="{{classic.content}}" />
+
+
+  <mm-nav class="nav" bind:left="onNext" bind:right="onPrev" title="{{classic.title}}" first="{{first}}" latest="{{latest}}" />
+</view>

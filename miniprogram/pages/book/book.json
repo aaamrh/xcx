@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mm-book": "/components/book/book",
+    "mm-search": "/components/search/search"
+  }
+}

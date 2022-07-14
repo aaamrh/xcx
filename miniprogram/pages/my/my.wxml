@@ -1,0 +1,36 @@
+<view class="container">
+  <image src="/images/my/my@bg.png" class="bg"></image>
+
+  <!-- <open-data type="userAvatarUrl" class="avatar avatar-position"></open-data> -->
+
+  <!-- 注意： open-type 对应组件的 openType, 小程序规定使用自定义属性要用横线链接，组件定义时用驼峰 -->
+  <mm-img-btn open-type="getUserInfo" class="avatar-position"
+    bind:getuserinfo="onGetUserInfo"
+    wx:if="{{!authorize}}"
+  >
+    <image slot="img" class="avatar" src="/images/my/my.png" />
+  </mm-img-btn>
+  <mm-img-btn open-type="getUserInfo" class="avatar-position"
+    bind:getuserinfo="onGetUserInfo"
+    wx:if="{{authorize}}"
+  >
+    <image slot="img" class="avatar" src="{{userInfo.avatarUrl}}" />
+    <text>{{userInfo.nickName}}</text>
+  </mm-img-btn>
+
+  <view class="about-container">
+    <view bind:tap="onJumpToAbout" class="about-us">
+      <image src="/images/my/about.png" />
+      <text class="description">关于我们</text>
+    </view>
+    <view class="about-us">
+      <text class="book-num">{{bookCount}}</text>
+      <text class="description">喜欢的书</text>
+    </view>
+
+  </view>   
+
+  <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权</button> -->
+
+
+</view>

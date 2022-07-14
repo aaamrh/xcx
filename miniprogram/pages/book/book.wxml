@@ -1,0 +1,21 @@
+<!-- 一般不建议使用 wx:for-item -->
+<!-- wx:key  填写item的属性 id ， 列表下的元素本身就是字符串或数字时 可以填写*this-->
+<view wx:if="{{!searching}}" class="container">
+  <view class="header">
+    <view class="box" bind:tap="onSearching">
+      <image></image>
+      <text>搜索书籍</text>
+    </view>
+  </view>
+  <view class="sub-container">
+    <image class="head-img"></image> 
+
+    <view class="books-container">
+      <block wx:for="{{books}}" wx:for-item="o" ws:key="id">
+        <mm-book book="{{ o }}"></mm-book>
+      </block> 
+    </view>
+  </view>
+</view>
+
+<mm-search bind:cancel="onCancel" wx:if="{{searching}}" more="{{more}}"></mm-search>

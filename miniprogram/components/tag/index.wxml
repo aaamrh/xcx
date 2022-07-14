@@ -1,0 +1,5 @@
+<!-- tag-class 是 js 中 externalClasses 定义的样式 -->
+<view bind:tap="onTap" class="container tag-class"> 
+  <text>{{text}}</text>
+  <slot name="after"> </slot>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mm-tag": "/components/tag/index",
+    "mm-like": "/components/like/index",
+    "mm-mask": "/components/mask/index"
+  }
+}
